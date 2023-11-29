@@ -29,7 +29,7 @@ namespace Talabat.APIs.Middlewares
                 logger.LogError(ex, ex.Message);
                 // Log Exception in Database[Production]
 
-                context.Response.ContentType = "application/json";
+                context.Response.ContentType = "application/json"; 
                 context.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
 
                 var response = env.IsDevelopment() ?

@@ -13,13 +13,13 @@ namespace Talabat.APIs.Controllers
     public class PaymentsController : BaseApiController
     {
         private readonly IPaymentService _paymentService;
-        //private readonly ILogger<PaymentsController> _logger;
-        //private const string _whSecrect = "whsec_af4a558e28269773e695fd87979a0835562b2fc2f42595b5a7ec228d48c1f0c2";
+        private readonly ILogger<PaymentsController> _logger;
+        private const string _whSecrect = "whsec_af4a558e28269773e695fd87979a0835562b2fc2f42595b5a7ec228d48c1f0c2";
 
-        public PaymentsController(IPaymentService paymentService /*, ILogger<PaymentsController> logger*/)
+        public PaymentsController(IPaymentService paymentService, ILogger<PaymentsController> logger)
         {
             _paymentService = paymentService;
-            //_logger = logger;
+            _logger = logger;
         }
 
         [ProducesResponseType(typeof(CustomerBasket),StatusCodes.Status200OK)]
@@ -35,34 +35,35 @@ namespace Talabat.APIs.Controllers
             return Ok(basket);
         }
 
-        //[HttpPost("webhook")] // POST: /api/Payments/webhook
-        //public async Task<ActionResult> StripeWebHook()
-        //{
-        //    var json = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
+        [AllowAnonymous]
+        [HttpPost("webhook")] // POST: /api/Payments/webhook
+        public async Task<ActionResult> StripeWebHook()
+        {
+            var json = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
 
-        //        var stripeEvent = EventUtility.ConstructEvent(json,
-        //            Request.Headers["Stripe-Signature"], _whSecrect);
+            var stripeEvent = EventUtility.ConstructEvent(json,
+                Request.Headers["Stripe-Signature"], _whSecrect);
 
-        //        var paymentIntent = (PaymentIntent) stripeEvent.Data.Object;
+            var paymentIntent = (PaymentIntent)stripeEvent.Data.Object;
 
-        //        Order order;
-        //        // Handle the event
-        //        switch (stripeEvent.Type)
-        //        {
-        //            case Events.PaymentIntentSucceeded:
-        //                order = await _paymentService.UpdatePaymentIntentToSucceededOrFailed(paymentIntent.Id,true);
-        //                _logger.LogInformation("Payment Is Succeeded Ya Hamada",paymentIntent.Id);
-        //                break;
-        //            case Events.PaymentIntentPaymentFailed:
-        //                order = await _paymentService.UpdatePaymentIntentToSucceededOrFailed(paymentIntent.Id, false);
-        //                _logger.LogInformation("Payment Is Faild Ya Hamada", paymentIntent.Id);
-        //                break;
-        //        }
-                
-      
-        //        return Ok();
-            
-            
-        //}
+            Order order;
+            // Handle the event
+            switch (stripeEvent.Type)
+            {
+                case Events.PaymentIntentSucceeded:
+                    order = await _paymentService.UpdatePaymentIntentToSucceededOrFailed(paymentIntent.Id, true);
+                    _logger.LogInformation("Payment Is Succeeded Ya Hamada", paymentIntent.Id);
+                    break;
+                case Events.PaymentIntentPaymentFailed:
+                    order = await _paymentService.UpdatePaymentIntentToSucceededOrFailed(paymentIntent.Id, false);
+                    _logger.LogInformation("Payment Is Faild Ya Hamada", paymentIntent.Id);
+                    break;
+            }
+
+
+            return Ok();
+
+
+        }
     }
 }

@@ -87,3 +87,4 @@ D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G0
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.APIs\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.APIs\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.APIs\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.APIs\obj\Debug\net6.0\Talabat.APIs.sourcelink.json

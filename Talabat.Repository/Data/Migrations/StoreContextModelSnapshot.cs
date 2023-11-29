@@ -188,8 +188,7 @@ namespace Talabat.Repository.Data.Migrations
                     b.HasOne("Talabat.Core.Entities.Order_Aggregate.DeliveryMethod", "DeliveryMethod")
                         .WithMany()
                         .HasForeignKey("DeliveryMethodId")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.OwnsOne("Talabat.Core.Entities.Order_Aggregate.Address", "ShippingAddress", b1 =>
                         {
@@ -234,7 +233,8 @@ namespace Talabat.Repository.Data.Migrations
                 {
                     b.HasOne("Talabat.Core.Entities.Order_Aggregate.Order", null)
                         .WithMany("Items")
-                        .HasForeignKey("OrderId");
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.OwnsOne("Talabat.Core.Entities.Order_Aggregate.ProductItemOrdered", "Product", b1 =>
                         {

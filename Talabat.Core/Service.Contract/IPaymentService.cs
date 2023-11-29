@@ -12,6 +12,6 @@ namespace Talabat.Core.Service.Contract
     {
         Task<CustomerBasket?> CreateOrUpdatePaymentIntent(string basketId);
 
-        //Task<Order> UpdatePaymentIntentToSucceededOrFailed(string paymentIntentId, bool isSucceeded);
+        Task<Order> UpdatePaymentIntentToSucceededOrFailed(string paymentIntentId, bool isSucceeded);
     }
 }

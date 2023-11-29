@@ -13,3 +13,4 @@ D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G0
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Service\bin\Debug\net6.0\Talabat.Core.pdb
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.csproj.AssemblyReference.cache
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.csproj.CopyComplete
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Service\obj\Debug\net6.0\Talabat.Service.sourcelink.json

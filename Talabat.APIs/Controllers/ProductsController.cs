@@ -37,7 +37,7 @@ namespace Talabat.APIs.Controllers
             _mapper = mapper;
         }
 
-        // /api/Products
+        [CachedAttribute(600)] // Action Filter
         //[Authorize/*(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)*/]
         [HttpGet] // GET: /api/products
         public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts([FromQuery] ProductSpecParams specParams)
@@ -54,6 +54,7 @@ namespace Talabat.APIs.Controllers
         }
 
         // /api/Products/1
+        [CachedAttribute(600)] // Action Filter
         [ProducesResponseType(typeof(ProductToReturnDto), StatusCodes.Status200OK)]
 
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
@@ -69,6 +70,7 @@ namespace Talabat.APIs.Controllers
             return Ok(_mapper.Map<Product,ProductToReturnDto>(product));
         }
 
+        [CachedAttribute(600)] // Action Filter
         [HttpGet("brands")] // GET: /api/products/brands
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
         {
@@ -77,6 +79,7 @@ namespace Talabat.APIs.Controllers
             return Ok(brands);
         }
 
+        [CachedAttribute(600)] // Action Filter
         [HttpGet("categories")] // GET: /api/products/categories
         public async Task<ActionResult<IReadOnlyList<ProductCategory>>> GetCategories()
         {

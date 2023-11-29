@@ -13,3 +13,4 @@ D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G0
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net6.0\refint\Talabat.Repository.dll
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net6.0\Talabat.Repository.pdb
 D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net6.0\ref\Talabat.Repository.dll
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net6.0\Talabat.Repository.sourcelink.json

@@ -100,23 +100,23 @@ namespace Talabat.Service
             return basket;
         }
 
-        //public async Task<Order> UpdatePaymentIntentToSucceededOrFailed(string paymentIntentId, bool isSucceeded)
-        //{
-        //    var spec = new OrderWithPaymentIntentSpecifications(paymentIntentId);
+        public async Task<Order> UpdatePaymentIntentToSucceededOrFailed(string paymentIntentId, bool isSucceeded)
+        {
+            var spec = new OrderWithPaymentIntentSpecifications(paymentIntentId);
 
-        //    var order = await _unitOfWork.Repository<Order>().GetEntityWithSpecAsync(spec);
+            var order = await _unitOfWork.Repository<Order>().GetEntityWithSpecAsync(spec);
 
-        //    if (order is null) return null;
+            if (order is null) return null;
 
-        //    if (isSucceeded)
-        //        order.Status = OrderStatus.PaymentReceived;
-        //    else
-        //        order.Status = OrderStatus.PaymentFailed;
+            if (isSucceeded)
+                order.Status = OrderStatus.PaymentReceived;
+            else
+                order.Status = OrderStatus.PaymentFailed;
 
-        //    _unitOfWork.Repository<Order>().Update(order);
-        //    await _unitOfWork.CompleteAsync();
+            _unitOfWork.Repository<Order>().Update(order);
+            await _unitOfWork.CompleteAsync();
 
-        //    return order;
-        //}
+            return order;
+        }
     }
 }

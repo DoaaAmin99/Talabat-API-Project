@@ -29,6 +29,10 @@ namespace Talabat.Repository.Data.Config
                    .WithMany()
                    .OnDelete(DeleteBehavior.SetNull);
 
+            builder.HasMany(O => O.Items)
+                   .WithOne()
+                   .OnDelete(DeleteBehavior.SetNull);
+
         }
     }
 }
