@@ -1,0 +1,16 @@
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\bin\Debug\net8.0\Talabat.Repository.deps.json
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\bin\Debug\net8.0\Talabat.Repository.dll
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\bin\Debug\net8.0\Talabat.Repository.pdb
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\bin\Debug\net8.0\Talabat.Core.dll
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\bin\Debug\net8.0\Talabat.Core.pdb
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.csproj.AssemblyReference.cache
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.AssemblyInfoInputs.cache
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.AssemblyInfo.cs
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.csproj.CoreCompileInputs.cache
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.sourcelink.json
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.csproj.CopyComplete
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.dll
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\refint\Talabat.Repository.dll
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\Talabat.Repository.pdb
+D:\Route\Full stack -Route\Back-end\Practice\08 ASP.NET Core Web APIs\Talabat.G03.Solution\Talabat.Repository\obj\Debug\net8.0\ref\Talabat.Repository.dll
